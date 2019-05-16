@@ -16,8 +16,7 @@
       [dialect columnName]
       (case dialect
             :mysql (str "`" columnName "`")
-            (str columnName )
-            ;(str "\"" columnName "\"")
+            (str "\"" columnName "\"")
             ))
 
 (defn fieldOp
